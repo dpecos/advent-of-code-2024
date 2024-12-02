@@ -42,4 +42,16 @@ public class ListUtils {
 
     return distance;
   }
+
+  public static int similarityScoreBetweenLists(List<Integer> list1, List<Integer> list2) {
+    var score = 0;
+
+    for (int i = 0; i < list1.size(); i++) {
+      var item = list1.get(i);
+      var occurrencesInSecondList = list2.stream().filter(x -> x.equals(item)).count();
+      score += item * occurrencesInSecondList;
+    }
+
+    return score;
+  }
 }

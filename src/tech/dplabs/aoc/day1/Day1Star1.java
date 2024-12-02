@@ -1,10 +1,9 @@
 package tech.dplabs.aoc.day1;
 
-import java.util.List;
-
 import static tech.dplabs.aoc.day1.ListUtils.*;
 
-public class Day1 {
+public class Day1Star1 {
+
   public static void main(String[] args) {
 
     var lists = readPairOfListsFromFile("src/tech/dplabs/aoc/day1/input.txt");

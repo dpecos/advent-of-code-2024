@@ -37,4 +37,12 @@ class ListUtilsTest {
     assertEquals(list1, pair.first());
     assertEquals(list2, pair.second());
   }
+
+  @Test
+  void testSimilarityScore() {
+    var list1 = List.of(3,4,2,1,3,3);
+    var list2 = List.of(4,3,5,3,9,3);
+
+    assertEquals(31, ListUtils.similarityScoreBetweenLists(list1, list2));
+  }
 }
