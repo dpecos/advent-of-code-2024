@@ -1,0 +1,21 @@
+package tech.dplabs.aoc.day2;
+
+import static tech.dplabs.aoc.day2.ReportUtils.isReportSafe;
+import static tech.dplabs.aoc.day2.ReportUtils.readReportsFromFile;
+
+public class Day2Star2 {
+
+  public static void main(String[] args) {
+    var reports = readReportsFromFile("src/tech/dplabs/aoc/day2/input.txt");
+
+    var safeReports = 0;
+
+    for (var report : reports) {
+      if (isReportSafe(report, 1)) {
+        safeReports++;
+      }
+    }
+
+    System.out.println(safeReports);
+  }
+}

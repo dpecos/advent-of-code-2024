@@ -25,13 +25,14 @@ public class ReportUtils {
     return reports;
   }
 
-  public static boolean isReportSafe(List<Integer> report) {
+  public static boolean isReportSafe(List<Integer> report, int toolerateUnsafeCount) {
     var isSafe = true;
 
     Integer levelDeltaDirection = null;
     Integer previousLevel = null;
 
-    for (var level : report) {
+    for (int i = 0; i < report.size(); i++) {
+      var level = report.get(i);
       if (previousLevel != null) {
         var currentDeltaDirection = level - previousLevel > 0 ? 1 : -1;
         if (levelDeltaDirection == null) {
@@ -40,17 +41,41 @@ public class ReportUtils {
 
         if (currentDeltaDirection != levelDeltaDirection) {
           isSafe = false;
-          break;
         }
 
         if (Math.abs(level - previousLevel) <= 0 || Math.abs(level - previousLevel) > 3) {
           isSafe = false;
-          break;
+        }
+
+        if (!isSafe) {
+          if (toolerateUnsafeCount > 0) {
+            toolerateUnsafeCount--;
+
+            for (int j = 0; j <= report.size(); j++) {
+              var partialReport = new ArrayList<>(report.subList(0, j == 0 ? 0 : j-1));
+              partialReport.addAll(report.subList(j, report.size()));
+
+              isSafe = isReportSafe(partialReport, toolerateUnsafeCount);
+
+              if (isSafe) {
+                // if the partial report is safe, no need to continue checking
+                return true;
+              }
+            }
+          }
+
+          if (!isSafe) {
+            break;
+          }
         }
       }
       previousLevel = level;
     }
 
     return isSafe;
+  }
+
+  public static boolean isReportSafe(List<Integer> report) {
+    return isReportSafe(report, 0);
   }
 }
