@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aoc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advent-of-code-2024.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/Day1Star1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/Day1Star2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/ListUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/Pair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day2/Day2Star1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day2/Day2Star2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day2/ReportUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day2/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day3/Calculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day3/Day3Star1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day3/Day3Star2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day1/ListUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/tech/dplabs/aoc/day1/ListUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/day1_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day2/ListReportsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/tech/dplabs/aoc/day2/ListReportsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day2/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/day2_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day3/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/tech/dplabs/aoc/day3/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +44,16 @@
     "Application.Day3Star2 (1).executor": "Run",
     "Application.Day3Star2.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in aoc (1).executor": "Run",
     "JUnit.All in aoc.executor": "Run",
     "JUnit.CalculatorTest.executor": "Run",
     "JUnit.CalculatorTest.testCalculate.executor": "Run",
     "JUnit.CalculatorTest.testCalculateConditionals.executor": "Run",
     "JUnit.CalculatorTest.testCalculateConditionalsAllOff.executor": "Run",
     "JUnit.CalculatorTest.testCalculateConditionalsPartialOff.executor": "Run",
+    "JUnit.ListUtilsTest.testReadingPairOfLists.executor": "Run",
+    "JUnit.aoc in aoc.executor": "Run",
+    "JUnit.tech.dplabs.aoc in aoc.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -113,7 +93,7 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in aoc (1)">
+  <component name="RunManager" selected="Application.Day3Star1">
     <configuration name="Day3Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <option name="MAIN_CLASS_NAME" value="Day3Star1" />
@@ -126,17 +106,6 @@
       <module name="aoc" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in aoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea --enable-preview" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,6 +126,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="aoc in aoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tech.dplabs.aoc in aoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
@@ -173,18 +150,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Day3Star1" />
+      <item itemvalue="JUnit.aoc in aoc" />
       <item itemvalue="JUnit.All in aoc (1)" />
       <item itemvalue="JUnit.ListUtilsTest.testReadingPairOfLists" />
       <item itemvalue="JUnit.tech.dplabs.aoc in aoc" />
-      <item itemvalue="JUnit.All in aoc" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day3Star1" />
+        <item itemvalue="JUnit.aoc in aoc" />
         <item itemvalue="JUnit.All in aoc (1)" />
         <item itemvalue="JUnit.ListUtilsTest.testReadingPairOfLists" />
         <item itemvalue="JUnit.tech.dplabs.aoc in aoc" />
-        <item itemvalue="Application.Day3Star1" />
-        <item itemvalue="JUnit.All in aoc" />
       </list>
     </recent_temporary>
   </component>
