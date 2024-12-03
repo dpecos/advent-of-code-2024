@@ -4,14 +4,14 @@ import java.util.regex.Pattern;
 
 public class Calculator {
   public static int calculate(String input, boolean enableConditionals) {
-    var pattern = Pattern.compile( "((mul)\\((\\d{1,3}),(\\d{1,3})\\)|((do|don't))\\(\\))");
+    var pattern = Pattern.compile("((mul)\\((\\d{1,3}),(\\d{1,3})\\)|((do|don't))\\(\\))");
 
     int result = 0;
 
     boolean mulEnabled = true;
 
     var matcher = pattern.matcher(input);
-    while (matcher.find())  {
+    while (matcher.find()) {
       var operator = matcher.group(2);
       if (operator == null || operator.isEmpty()) {
         operator = matcher.group(5);

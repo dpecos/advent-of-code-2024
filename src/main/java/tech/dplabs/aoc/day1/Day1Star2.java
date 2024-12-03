@@ -6,7 +6,7 @@ public class Day1Star2 {
 
   public static void main(String[] args) {
 
-    var lists = readPairOfListsFromFile("src/tech/dplabs/aoc/day1/input.txt");
+    var lists = readPairOfListsFromFile("src/main/resources/day1_input.txt");
 
     var locationIDs = lists.first();
     var locationOccurrences = lists.second();

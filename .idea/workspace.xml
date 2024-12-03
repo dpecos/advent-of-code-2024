@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aoc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advent-of-code-2024.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/Day1Star1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/Day1Star2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/ListUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day1/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day2/Day2Star1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day2/Day2Star2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day2/ReportUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day2/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day3/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day3/Day3Star1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tech/dplabs/aoc/day3/Day3Star2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day1/ListUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/tech/dplabs/aoc/day1/ListUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/day1_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day2/ListReportsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/tech/dplabs/aoc/day2/ListReportsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day2/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/day2_input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tech/dplabs/aoc/day3/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/tech/dplabs/aoc/day3/CalculatorTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2pebXCXXPGlW034Bx2ArBlFMEPX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Day1Star1.executor": "Run",
+    "Application.Day1Star2.executor": "Run",
+    "Application.Day2Star1.executor": "Run",
+    "Application.Day2Star2.executor": "Run",
+    "Application.Day3Star1.executor": "Run",
+    "Application.Day3Star2 (1).executor": "Run",
+    "Application.Day3Star2.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in aoc.executor": "Run",
+    "JUnit.CalculatorTest.executor": "Run",
+    "JUnit.CalculatorTest.testCalculate.executor": "Run",
+    "JUnit.CalculatorTest.testCalculateConditionals.executor": "Run",
+    "JUnit.CalculatorTest.testCalculateConditionalsAllOff.executor": "Run",
+    "JUnit.CalculatorTest.testCalculateConditionalsPartialOff.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/tech/dplabs/aoc",
+    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="tech.dplabs.aoc.day1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/test/java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="tech.dplabs.aoc.day1" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tech.dplabs.aoc.day3" />
+      <recent name="tech.dplabs.aoc.day2" />
+      <recent name="tech.dplabs.aoc.day1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in aoc (1)">
+    <configuration name="Day3Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day3Star1" />
+      <module name="aoc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in aoc (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in aoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea --enable-preview" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListUtilsTest.testReadingPairOfLists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day1" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day1.ListUtilsTest" />
+      <option name="METHOD_NAME" value="testReadingPairOfLists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tech.dplabs.aoc in aoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Day3Star1" />
+      <item itemvalue="JUnit.All in aoc (1)" />
+      <item itemvalue="JUnit.ListUtilsTest.testReadingPairOfLists" />
+      <item itemvalue="JUnit.tech.dplabs.aoc in aoc" />
+      <item itemvalue="JUnit.All in aoc" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in aoc (1)" />
+        <item itemvalue="JUnit.ListUtilsTest.testReadingPairOfLists" />
+        <item itemvalue="JUnit.tech.dplabs.aoc in aoc" />
+        <item itemvalue="Application.Day3Star1" />
+        <item itemvalue="JUnit.All in aoc" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="" />
+      <created>1733129525419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733129525419</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/java/tech/dplabs/aoc/day1/ListUtilsTest.java</url>
+          <line>12</line>
+          <properties class="tech.dplabs.aoc.day1.ListUtilsTest" method="testSortList">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/tech/dplabs/aoc/day1/Day1Star1.java</url>
+          <line>8</line>
+          <properties class="tech.dplabs.aoc.day1.Day1Star1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/tech/dplabs/aoc/day1/Day1Star2.java</url>
+          <line>6</line>
+          <properties class="tech.dplabs.aoc.day1.Day1Star2" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/tech/dplabs/aoc/day2/Day2Star1.java</url>
+          <line>7</line>
+          <properties class="tech.dplabs.aoc.day2.Day2Star1" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/java/tech/dplabs/aoc/day2/ListReportsTest.java</url>
+          <line>33</line>
+          <properties class="tech.dplabs.aoc.day2.ListReportsTest" method="testReportSafetyTolerating1">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

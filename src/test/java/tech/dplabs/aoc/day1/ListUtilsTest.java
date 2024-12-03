@@ -30,7 +30,7 @@ class ListUtilsTest {
 
   @Test
   void testReadingPairOfLists() {
-    var pair = ListUtils.readPairOfListsFromFile("test/tech/dplabs/aoc/day1/input.txt");
+    var pair = ListUtils.readPairOfListsFromFile("src/test/resources/day1_input.txt");
     var list1 = List.of(3,4,2,1,3,3);
     var list2 = List.of(4,3,5,3,9,3);
 

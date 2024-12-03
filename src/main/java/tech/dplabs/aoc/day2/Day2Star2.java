@@ -12,7 +12,7 @@ public class Day2Star2 {
   public static void main(String[] args) {
     var startTime = System.currentTimeMillis();
 
-    var reports = readReportsFromFile("src/tech/dplabs/aoc/day2/input.txt");
+    var reports = readReportsFromFile("src/main/resources/day2_input.txt");
 
     var safeReports = 0;
 

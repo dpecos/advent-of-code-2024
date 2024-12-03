@@ -11,7 +11,7 @@ public class ListReportsTest {
 
   @Test
   void testReadingReportsFromFile() {
-    var reports = ReportUtils.readReportsFromFile("test/tech/dplabs/aoc/day2/input.txt");
+    var reports = ReportUtils.readReportsFromFile("src/test/resources/day2_input.txt");
 
     var report1 = List.of(7,6,4,2,1);
     var report6 = List.of(1, 3, 6, 7, 9);
@@ -43,7 +43,7 @@ public class ListReportsTest {
 
   @Test
   void testCountSafeReportsTolerating1() {
-    var reports = ReportUtils.readReportsFromFile("test/tech/dplabs/aoc/day2/input.txt");
+    var reports = ReportUtils.readReportsFromFile("src/test/resources/day2_input.txt");
 
     var countSafeReports = 0;
     for (var report: reports) {
