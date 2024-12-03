@@ -2,7 +2,7 @@ package tech.dplabs.aoc.day3;
 
 import static tech.dplabs.aoc.day3.Calculator.calculate;
 
-public class Day3Star1 {
+public class Day3Star2 {
   public static void main(String[] args) {
 
     String input = """
@@ -14,6 +14,6 @@ why()where()why();?mul(169,662)(;?*select()>~<mul(6,518)$ #{,how()mul(2,142)/;mu
 *;++){#<mul(49,745)when()[what()mul(502,602)*?]from()from()!)%mul(870,408)!:mul(438,953)mul(477,794){mul(725,610)~}mul(149}what()~>what()^mul(591,595)what()when();(%$mul(35,204)where()) $mul(623,430)$!what())?mul(986,195)from()mul(333,771)where():^mul(366,275)who()why()' 'why()/{mul(886,569){what()what(459,994)$/{&mul(812,296)when()from()(:']/mul(938,122~what();?!where()~when()where()how(485,785)'mul(662,423)!+]/mul(931,464){,(^]mul?, mul(80,65)-<~^how())mul(537,517))who()?;}{mul(309,415))<%&;do()why();select()<%^why()mulwhat()$mul(97,261)]mul(976,251)<mul(929,486){@ select()%[mul(79,951)^{>/;<how()-how()mul(156,577);how()^!?}where()+how()@mul(608,799){'@^from())!/mul(103,54)!?from()mul[$/:&#?+$mul(577,38):mul(100,110)how()-$?/!%mul(373,344)@how()what())mul(476,880) mul(521,941))@mul(636,681)#?mul(911,48)%when(){select()&[mul(925,246)why()[mul(385,738)@<#/<<'why()/mul(747,613*%(why(600,668)when()#]$'}mul(991,663)<mul(380,823))$)<mul(790,442):where()@mul(485,925)select()/[!where()mul(760,526)why()do()mulhow(905,171))'when()<+mul(687,303));]}$];{how()%mul(885,373)$mul(538,642)/-&who()mul(904,758)mul(72,737)mul(957,888)how()!&why()!mul(125,773)[!#&%mul(107,113)mul(816,499)@mul(312,957)?>what()@:/<mul(35,722)~:&+][who()how()mul(420,105)from()[{]$:[>mul(236,347)&{}how()mul(115,717)^select():where()where()#$+%+mul(995,8)mul(281,511) >where()@mul(218,447);[[+don't()mul(856,826),-%mul(791,178)%*who();;@>&mul(355,579){>;from()>-]don't()!from()where(){'@*>&)mul(426,689)}mul(19,952),[$[@]why();from(807,651)?don't(),:;>mul(331,69):&how(888,904)mul(181,101){  :(*}: mul(628,267)>~@mul(521,898)&where()how()(~ )what()what()-mul(476,329)<)),mul(362,495)$* );;mul(245,39)why()select()/how()-,(}@mul(185,370)when())&<mul(622,439)mul(943,965)*~:mul(965,299)mul(29,612)@[where()how()mul(43,652)how()+$^+@ select()'how()mul(752,988)@who()when()>^*}mul(401,151)?+what()select();when()why()>:<mul(745,699)@$}where()~mul(77,216)when()(}what() %<mul(916,810)%$[{how()(~;why()mul(647,373)where()$where()+,[when()from()&mul(356,323)where()!,select()%where()'+mul(659,65):where(){:how()mul(163,188)mul(653,216),where()-**!*&from()mul(187,460)mul(347,271)mul(828,838)mul(70,426){from()mul(203,314):  [where())*-^mul(276,626)mul(450,217)select()~ @&where(291,356)mul(201,755)@'~%!> ^}]mul(119,516):(mul(738,634)mul(830,590)where()?do()^&@}(&/>why()*mul(982,557)?/when()~?~<>mul(522,576)select()where()<&{mul(828,380)how()what()where(795,225)'mul(629,665)&mul(816,674)};#*[# {when()mul(833,343)how()how()why()what()mul(902,29) select())%<>(,!mul(698,182)^what()-,,}where()don't()from()from()/</&<]+mul(420,273)from()select()how()}where()mul(786,927)why()mul(945,741)[mul(395,39)!,do()from()mul(345,451),mul(575,284):^+mul(210,669)@]&when()when()#mul(347,353) how()
 """;
 
-    System.out.println(calculate(input, false));
+    System.out.println(calculate(input, true));
   }
 }
