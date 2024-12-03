@@ -12,19 +12,20 @@ public class Calculator {
 
     var matcher = pattern.matcher(input);
     while (matcher.find())  {
-      var op = matcher.group(2);
-      if (op == null || op.isEmpty()) {
-        op = matcher.group(0);
+      var operator = matcher.group(2);
+      if (operator == null || operator.isEmpty()) {
+        operator = matcher.group(5);
       }
-      switch (op) {
+
+      switch (operator) {
         case "mul":
           result += mulEnabled ? Integer.parseInt(matcher.group(3)) * Integer.parseInt(matcher.group(4)) : 0;
           break;
-        case "do()":
+        case "do":
           mulEnabled = true;
           break;
-        case "don't()":
-          mulEnabled = false;
+        case "don't":
+          mulEnabled = enableConditionals ? false : true;
           break;
       }
     }
