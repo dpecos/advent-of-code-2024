@@ -1,7 +1,8 @@
 package tech.dplabs.aoc.day2;
 
 import java.util.ArrayList;
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.StructuredTaskScope;
 import java.util.function.Supplier;
 
 import static tech.dplabs.aoc.day2.ReportUtils.isReportSafe;

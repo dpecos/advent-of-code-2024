@@ -14,7 +14,7 @@ public class ReportUtils {
     try (var reader = new BufferedReader(new FileReader(path))) {
       String line;
       while ((line = reader.readLine()) != null) {
-        var parts = line.split("\s+");
+        var parts = line.split(" +");
 
         reports.add(Arrays.stream(parts).map(Integer::parseInt).toList());
       }
@@ -52,7 +52,7 @@ public class ReportUtils {
             toolerateUnsafeCount--;
 
             for (int j = 0; j <= report.size(); j++) {
-              var partialReport = new ArrayList<>(report.subList(0, j == 0 ? 0 : j-1));
+              var partialReport = new ArrayList<>(report.subList(0, j == 0 ? 0 : j - 1));
               partialReport.addAll(report.subList(j, report.size()));
 
               isSafe = isReportSafe(partialReport, toolerateUnsafeCount);

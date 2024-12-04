@@ -23,7 +23,7 @@ public class WordSearchTest {
 
   @Test
   void testCheckCrossMAS1() {
-    var wordSearch = new String[][] {
+    var wordSearch = new String[][]{
       {"M", "-", "S"},
       {"-", "A", "-"},
       {"M", "-", "S"}
@@ -34,7 +34,7 @@ public class WordSearchTest {
 
   @Test
   void testCheckCrossMAS2() {
-    var wordSearch = new String[][] {
+    var wordSearch = new String[][]{
       {"M", "-", "M"},
       {"-", "A", "-"},
       {"S", "-", "S"}
@@ -45,7 +45,7 @@ public class WordSearchTest {
 
   @Test
   void testCheckCrossMAS3() {
-    var wordSearch = new String[][] {
+    var wordSearch = new String[][]{
       {"S", "-", "M"},
       {"-", "A", "-"},
       {"S", "-", "M"}
@@ -56,7 +56,7 @@ public class WordSearchTest {
 
   @Test
   void testCheckCrossMAS4() {
-    var wordSearch = new String[][] {
+    var wordSearch = new String[][]{
       {"S", "-", "S"},
       {"-", "A", "-"},
       {"M", "-", "M"}
@@ -67,7 +67,7 @@ public class WordSearchTest {
 
   @Test
   void testCountCrossMAS1() {
-    var wordSearch = new String[][] {
+    var wordSearch = new String[][]{
       {"M", "-", "M"},
       {"-", "A", "-"},
       {"S", "-", "S"}
@@ -78,7 +78,7 @@ public class WordSearchTest {
 
   @Test
   void testCountCrossMAS2() {
-    var wordSearch = new String[][] {
+    var wordSearch = new String[][]{
       {"-", "S", "-"},
       {"M", "A", "S"},
       {"-", "M", "-"}
@@ -89,7 +89,7 @@ public class WordSearchTest {
 
   @Test
   void testCountCrossMAS3() {
-    var wordSearch = new String[][] {
+    var wordSearch = new String[][]{
       {"S", "-", "M", "-", "S"},
       {"-", "A", "-", "A", "-"},
       {"S", "-", "M", "-", "S"},
@@ -102,7 +102,7 @@ public class WordSearchTest {
 
   @Test
   void testCountCrossMAS4() {
-    var wordSearch = new String[][] {
+    var wordSearch = new String[][]{
       {"M", "-", "S", "-", "M", "-", "S"},
       {"-", "A", "-", "A", "-", "A", "-"},
       {"M", "-", "S", "_", "M", "-", "S"}

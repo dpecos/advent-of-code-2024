@@ -1,4 +1,3 @@
-
 import static tech.dplabs.aoc.day3.Calculator.calculate;
 
 void main() {

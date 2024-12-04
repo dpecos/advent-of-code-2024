@@ -1,6 +1,7 @@
 package tech.dplabs.aoc.day1;
 
-import static tech.dplabs.aoc.day1.ListUtils.*;
+import static tech.dplabs.aoc.day1.ListUtils.readPairOfListsFromFile;
+import static tech.dplabs.aoc.day1.ListUtils.similarityScoreBetweenLists;
 
 public class Day1Star2 {
 

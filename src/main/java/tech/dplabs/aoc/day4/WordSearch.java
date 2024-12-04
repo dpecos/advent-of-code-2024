@@ -94,7 +94,7 @@ public class WordSearch {
         for (int x : offsets) {
           for (int y : offsets) {
             if (checkCrossMAS(wordSearch, row, col, x, y)) {
-                masCount++;
+              masCount++;
             }
           }
         }

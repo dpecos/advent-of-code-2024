@@ -12,15 +12,15 @@ class ListUtilsTest {
 
   @Test
   void testSortList() {
-    List<Integer> list = List.of(3,4,2,1,3,3);
-    List<Integer> expected = List.of(1,2,3,3,3,4);
+    List<Integer> list = List.of(3, 4, 2, 1, 3, 3);
+    List<Integer> expected = List.of(1, 2, 3, 3, 3, 4);
     assertEquals(expected, sortList(list));
   }
 
   @Test
   void testListDistance() {
-    var list1 = List.of(3,4,2,1,3,3);
-    var list2 = List.of(4,3,5,3,9,3);
+    var list1 = List.of(3, 4, 2, 1, 3, 3);
+    var list2 = List.of(4, 3, 5, 3, 9, 3);
 
     var list1sorted = sortList(list1);
     var list2sorted = sortList(list2);
@@ -31,8 +31,8 @@ class ListUtilsTest {
   @Test
   void testReadingPairOfLists() {
     var pair = ListUtils.readPairOfListsFromFile("src/test/resources/day1_input.txt");
-    var list1 = List.of(3,4,2,1,3,3);
-    var list2 = List.of(4,3,5,3,9,3);
+    var list1 = List.of(3, 4, 2, 1, 3, 3);
+    var list2 = List.of(4, 3, 5, 3, 9, 3);
 
     assertEquals(list1, pair.first());
     assertEquals(list2, pair.second());
@@ -40,8 +40,8 @@ class ListUtilsTest {
 
   @Test
   void testSimilarityScore() {
-    var list1 = List.of(3,4,2,1,3,3);
-    var list2 = List.of(4,3,5,3,9,3);
+    var list1 = List.of(3, 4, 2, 1, 3, 3);
+    var list2 = List.of(4, 3, 5, 3, 9, 3);
 
     assertEquals(31, ListUtils.similarityScoreBetweenLists(list1, list2));
   }
