@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4/WordSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day4_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day4/WordSearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day4_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +43,8 @@
     "Application.Day3Star1.executor": "Run",
     "Application.Day3Star2 (1).executor": "Run",
     "Application.Day3Star2.executor": "Run",
+    "Application.Day4Star1.executor": "Run",
+    "Application.Day4Star2.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.All in aoc (1).executor": "Run",
     "JUnit.All in aoc.executor": "Run",
@@ -56,6 +54,17 @@
     "JUnit.CalculatorTest.testCalculateConditionalsAllOff.executor": "Run",
     "JUnit.CalculatorTest.testCalculateConditionalsPartialOff.executor": "Run",
     "JUnit.ListUtilsTest.testReadingPairOfLists.executor": "Run",
+    "JUnit.WordSearchTest.executor": "Run",
+    "JUnit.WordSearchTest.testCheckCrossMAS.executor": "Run",
+    "JUnit.WordSearchTest.testCheckCrossMAS1.executor": "Run",
+    "JUnit.WordSearchTest.testCheckCrossMAS2.executor": "Run",
+    "JUnit.WordSearchTest.testCheckCrossMAS3.executor": "Run",
+    "JUnit.WordSearchTest.testCheckCrossMAS4.executor": "Run",
+    "JUnit.WordSearchTest.testCountCrossMAS.executor": "Run",
+    "JUnit.WordSearchTest.testCountCrossMAS1.executor": "Run",
+    "JUnit.WordSearchTest.testCountCrossMAS2.executor": "Run",
+    "JUnit.WordSearchTest.testCountCrossMAS3.executor": "Run",
+    "JUnit.WordSearchTest.testCountCrossMAS4.executor": "Run",
     "JUnit.WordSearchTest.testCountXMAS.executor": "Run",
     "JUnit.WordSearchTest.testLoadFromFile.executor": "Run",
     "JUnit.WordleTest.testLoadFromFile.executor": "Run",
@@ -71,7 +80,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/tech/dplabs/aoc",
-    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024",
+    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/main/java/tech/dplabs/aoc/day4",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -83,6 +92,7 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -101,15 +111,7 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day4Star1">
-    <configuration name="Day3Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day3Star1" />
-      <module name="aoc" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.WordSearchTest">
     <configuration name="Day4Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <option name="MAIN_CLASS_NAME" value="Day4Star1" />
@@ -118,7 +120,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordSearchTest.testCountXMAS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day4Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day4Star2" />
+      <module name="aoc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
@@ -128,13 +138,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day4" />
       <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day4.WordSearchTest" />
-      <option name="METHOD_NAME" value="testCountXMAS" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordSearchTest.testLoadFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordSearchTest.testCountCrossMAS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
@@ -144,34 +153,42 @@
       </extension>
       <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day4" />
       <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day4.WordSearchTest" />
-      <option name="METHOD_NAME" value="testLoadFromFile" />
+      <option name="METHOD_NAME" value="testCountCrossMAS" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aoc in aoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordSearchTest.testCountCrossMAS4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day4" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day4.WordSearchTest" />
+      <option name="METHOD_NAME" value="testCountCrossMAS4" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Day4Star1" />
-      <item itemvalue="Application.Day3Star1" />
-      <item itemvalue="JUnit.WordSearchTest.testCountXMAS" />
-      <item itemvalue="JUnit.WordSearchTest.testLoadFromFile" />
-      <item itemvalue="JUnit.aoc in aoc" />
+      <item itemvalue="Application.Day4Star2" />
+      <item itemvalue="JUnit.WordSearchTest" />
+      <item itemvalue="JUnit.WordSearchTest.testCountCrossMAS" />
+      <item itemvalue="JUnit.WordSearchTest.testCountCrossMAS4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WordSearchTest" />
+        <item itemvalue="Application.Day4Star2" />
+        <item itemvalue="JUnit.WordSearchTest.testCountCrossMAS" />
+        <item itemvalue="JUnit.WordSearchTest.testCountCrossMAS4" />
         <item itemvalue="Application.Day4Star1" />
-        <item itemvalue="JUnit.WordSearchTest.testCountXMAS" />
-        <item itemvalue="JUnit.WordSearchTest.testLoadFromFile" />
-        <item itemvalue="Application.Day3Star1" />
-        <item itemvalue="JUnit.aoc in aoc" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +202,17 @@
       <updated>1733129525419</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

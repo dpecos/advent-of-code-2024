@@ -47,9 +47,9 @@ public class WordSearch {
   public static int countXMAS(String[][] wordSearch) {
     int xmasCount = 0;
 
-    for (int i = 0; i < wordSearch.length; i++) {
-      for (int j = 0; j < wordSearch[i].length; j++) {
-        if (wordSearch[i][j].equals("X")) {
+    for (int row = 0; row < wordSearch.length; row++) {
+      for (int col = 0; col < wordSearch[row].length; col++) {
+        if (wordSearch[row][col].equals("X")) {
           /*
             1 2 3
             4 X 6
@@ -63,7 +63,19 @@ public class WordSearch {
             i,j-1     i,j     i,j+1
             i+1,j-1   i+1,j   i+1,j+1
            */
-          xmasCount += findMAS(wordSearch, i, j);
+          var offsets = new int[]{-1, 0, 1};
+
+          for (int x : offsets) {
+            for (int y : offsets) {
+              if (x == 0 && y == 0) {
+                continue;
+              }
+
+              if (checkMAS(wordSearch, row + x, col + y, x, y)) {
+                xmasCount++;
+              }
+            }
+          }
         }
       }
     }
@@ -71,37 +83,46 @@ public class WordSearch {
     return xmasCount;
   }
 
-  private static int findMAS(String[][] wordSearch, int i, int j) {
-    if (i < 0 || i >= wordSearch.length || j < 0 || j >= wordSearch[i].length) {
-      return 0;
-    }
-    int count = 0;
+  public static int countCrossMAS(String[][] wordSearch) {
+    int masCount = 0;
 
-    var offsets = new int[]{-1, 0, 1};
+    var offsets = new int[]{-1, 1};
 
-    for (int x : offsets) {
-      for (int y : offsets) {
-        if (x == 0 && y == 0) {
-          continue;
-        }
+    for (int row = 0; row < wordSearch.length; row++) {
+      for (int col = 0; col < wordSearch[row].length; col++) {
 
-        if (checkPosition(wordSearch, i + x, j + y, "M")) {
-          if (checkPosition(wordSearch, i + 2 * x, j + 2 * y, "A")) {
-            if (checkPosition(wordSearch, i + 3 * x, j + 3 * y, "S")) {
-              count++;
+        for (int x : offsets) {
+          for (int y : offsets) {
+            if (checkCrossMAS(wordSearch, row, col, x, y)) {
+                masCount++;
             }
           }
         }
       }
     }
 
-    return count;
+//    System.out.println(Arrays.deepToString(foundCrossMass));
+
+    if (masCount % 2 != 0) {
+      throw new IllegalStateException("Found an odd number of MAS");
+    }
+
+    return masCount / 2; // every cross-mass is found twice
   }
 
-  private static boolean checkPosition(String[][] wordSearch, int i, int j, String letter) {
-    if (i < 0 || i >= wordSearch.length || j < 0 || j >= wordSearch[i].length) {
+
+  private static boolean checkMAS(String[][] wordSearch, int row, int col, int x, int y) {
+    return checkPosition(wordSearch, row, col, "M") && checkPosition(wordSearch, row + x, col + y, "A") && checkPosition(wordSearch, row + 2 * x, col + 2 * y, "S");
+  }
+
+  static boolean checkCrossMAS(String[][] wordSearch, int row, int col, int x, int y) {
+    return checkMAS(wordSearch, row, col, x, y) && (checkMAS(wordSearch, row + x * 2, col, -x, y) || checkMAS(wordSearch, row, col + y * 2, x, -y));
+  }
+
+  private static boolean checkPosition(String[][] wordSearch, int row, int col, String letter) {
+    if (row < 0 || row >= wordSearch.length || col < 0 || col >= wordSearch[row].length) {
       return false;
     }
-    return wordSearch[i][j].equals(letter);
+    return wordSearch[row][col].equals(letter);
   }
 }
