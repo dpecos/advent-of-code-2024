@@ -63,15 +63,7 @@ public class PrintQueue {
     for (var page : update) {
       var beforePages = this.getRules().get(page);
 
-      var pageValid = true;
-      if (beforePages != null) {
-        for (var beforePage : beforePages) {
-          if (printedPages.contains(beforePage)) {
-            pageValid = false;
-            break;
-          }
-        }
-      }
+      var pageValid = beforePages == null || beforePages.stream().noneMatch(printedPages::contains);
 
       if (!pageValid) {
         invalidIndex = i;
@@ -90,17 +82,18 @@ public class PrintQueue {
     return this.getInvalidIndex(update) == -1;
   }
 
+  private int sumMiddlePagesOfUpdates(List<List<Integer>> updates) {
+    return updates.stream()
+      .filter(this::isValidUpdate)
+      .mapToInt(update -> update.get(update.size() / 2))
+      .sum();
+  }
+
   public int sumMiddlePagesOfValidUpdates() {
-    var total = 0;
-
-    for (var update : this.getUpdates()) {
-      if (this.isValidUpdate(update)) {
-        var middleIndex = update.size() / 2;
-        total += update.get(middleIndex);
-      }
-    }
-
-    return total;
+    var validUpdates = this.getUpdates().stream()
+      .filter(this::isValidUpdate)
+      .toList();
+    return this.sumMiddlePagesOfUpdates(validUpdates);
   }
 
   List<Integer> fixUpdate(List<Integer> update) {
@@ -129,16 +122,10 @@ public class PrintQueue {
   }
 
   public int sumMiddlePagesOfInvalidUpdates() {
-    var total = 0;
-
-    for (var update : this.getUpdates()) {
-      if (!this.isValidUpdate(update)) {
-        var fixedUpdate = this.fixUpdate(update);
-        var middleIndex = fixedUpdate.size() / 2;
-        total += fixedUpdate.get(middleIndex);
-      }
-    }
-
-    return total;
+    var fixedUpdates = this.getUpdates().stream()
+      .filter(u -> !this.isValidUpdate(u))
+      .map(this::fixUpdate)
+      .toList();
+    return this.sumMiddlePagesOfUpdates(fixedUpdates);
   }
 }
