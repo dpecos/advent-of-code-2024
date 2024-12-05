@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day5/Day5Star1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day5/PrintQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day5/PrintQueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day5_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +64,9 @@
     "JUnit.CalculatorTest.testCalculateConditionalsAllOff.executor": "Run",
     "JUnit.CalculatorTest.testCalculateConditionalsPartialOff.executor": "Run",
     "JUnit.ListUtilsTest.testReadingPairOfLists.executor": "Run",
+    "JUnit.PrintQueueTest.testLoadFromFile.executor": "Run",
+    "JUnit.PrintQueueTest.testSumMidelePagesOfValidUpdates.executor": "Run",
+    "JUnit.PrintQueueTest.testUpdatesCheck.executor": "Run",
     "JUnit.WordSearchTest.executor": "Run",
     "JUnit.WordSearchTest.testCheckCrossMAS.executor": "Run",
     "JUnit.WordSearchTest.testCheckCrossMAS1.executor": "Run",
@@ -104,10 +111,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/test/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/test/java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="tech.dplabs.aoc.day4" />
@@ -119,19 +127,59 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WordSearchTest">
-    <configuration name="Day4Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Day5Star1">
+    <configuration name="Day5Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day4Star1" />
+      <option name="MAIN_CLASS_NAME" value="Day5Star1" />
       <module name="aoc" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day4Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day4Star2" />
+    <configuration name="PrintQueueTest.testLoadFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day5" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day5.PrintQueueTest" />
+      <option name="METHOD_NAME" value="testLoadFromFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintQueueTest.testSumMidelePagesOfValidUpdates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day5" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day5.PrintQueueTest" />
+      <option name="METHOD_NAME" value="testSumMidelePagesOfValidUpdates" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintQueueTest.testUpdatesCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day5" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day5.PrintQueueTest" />
+      <option name="METHOD_NAME" value="testUpdatesCheck" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,52 +199,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordSearchTest.testCountCrossMAS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day4" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day4.WordSearchTest" />
-      <option name="METHOD_NAME" value="testCountCrossMAS" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordSearchTest.testCountCrossMAS4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day4" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day4.WordSearchTest" />
-      <option name="METHOD_NAME" value="testCountCrossMAS4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Day4Star1" />
-      <item itemvalue="Application.Day4Star2" />
+      <item itemvalue="Application.Day5Star1" />
+      <item itemvalue="JUnit.PrintQueueTest.testLoadFromFile" />
+      <item itemvalue="JUnit.PrintQueueTest.testSumMidelePagesOfValidUpdates" />
+      <item itemvalue="JUnit.PrintQueueTest.testUpdatesCheck" />
       <item itemvalue="JUnit.WordSearchTest" />
-      <item itemvalue="JUnit.WordSearchTest.testCountCrossMAS" />
-      <item itemvalue="JUnit.WordSearchTest.testCountCrossMAS4" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day5Star1" />
+        <item itemvalue="JUnit.PrintQueueTest.testSumMidelePagesOfValidUpdates" />
+        <item itemvalue="JUnit.PrintQueueTest.testUpdatesCheck" />
+        <item itemvalue="JUnit.PrintQueueTest.testLoadFromFile" />
         <item itemvalue="JUnit.WordSearchTest" />
-        <item itemvalue="Application.Day4Star2" />
-        <item itemvalue="JUnit.WordSearchTest.testCountCrossMAS" />
-        <item itemvalue="JUnit.WordSearchTest.testCountCrossMAS4" />
-        <item itemvalue="Application.Day4Star1" />
       </list>
     </recent_temporary>
   </component>
