@@ -29,8 +29,23 @@ public class PrintQueueTest {
   }
 
   @Test
-  void testSumMidelePagesOfValidUpdates() {
+  void testSumMiddlePagesOfValidUpdates() {
     var printQueue = PrintQueue.load("src/test/resources/day5_input.txt");
     assertEquals(143, printQueue.sumMiddlePagesOfValidUpdates());
+  }
+
+  @Test
+  void testFixRule() {
+    var printQueue = PrintQueue.load("src/test/resources/day5_input.txt");
+
+    assertEquals(List.of(97, 75, 47, 61, 53), printQueue.fixUpdate(List.of(75, 97, 47, 61, 53)));
+    assertEquals(List.of(61, 29, 13), printQueue.fixUpdate(List.of(61, 13, 29)));
+    assertEquals(List.of(97, 75, 47, 29, 13), printQueue.fixUpdate(List.of(97, 13, 75, 29, 47)));
+  }
+
+  @Test
+  void testSumMiddlePagesOfInvalidUpdates() {
+    var printQueue = PrintQueue.load("src/test/resources/day5_input.txt");
+    assertEquals(123, printQueue.sumMiddlePagesOfInvalidUpdates());
   }
 }

@@ -55,10 +55,11 @@ public class PrintQueue {
   }
 
 
-  boolean isValidUpdate(List<Integer> update) {
+  int getInvalidIndex(List<Integer> update) {
     var printedPages = new ArrayList<Integer>();
-    var updateValid = true;
+    var invalidIndex = -1;
 
+    var i = 0;
     for (var page : update) {
       var beforePages = this.getRules().get(page);
 
@@ -72,14 +73,21 @@ public class PrintQueue {
         }
       }
 
-      updateValid = updateValid && pageValid;
-      if (!updateValid) {
+      if (!pageValid) {
+        invalidIndex = i;
         break;
+      } else {
+        i++;
+        printedPages.add(page);
       }
-      printedPages.add(page);
+
     }
 
-    return updateValid;
+    return invalidIndex;
+  }
+
+  boolean isValidUpdate(List<Integer> update) {
+    return this.getInvalidIndex(update) == -1;
   }
 
   public int sumMiddlePagesOfValidUpdates() {
@@ -89,6 +97,45 @@ public class PrintQueue {
       if (this.isValidUpdate(update)) {
         var middleIndex = update.size() / 2;
         total += update.get(middleIndex);
+      }
+    }
+
+    return total;
+  }
+
+  List<Integer> fixUpdate(List<Integer> update) {
+    List<Integer> fixedUpdate = update;
+
+    var isValid = this.isValidUpdate(update);
+    if (!isValid) {
+      fixedUpdate = new ArrayList<>(update);
+    }
+
+    while (!isValid) {
+      var invalidIndex = this.getInvalidIndex(fixedUpdate);
+
+      isValid = invalidIndex == -1;
+
+      if (!isValid) {
+        // swap the invalid index to the previous position
+        var temp = fixedUpdate.get(invalidIndex - 1);
+        fixedUpdate.set(invalidIndex - 1, fixedUpdate.get(invalidIndex));
+        fixedUpdate.set(invalidIndex, temp);
+      } else {
+        break;
+      }
+    }
+    return fixedUpdate;
+  }
+
+  public int sumMiddlePagesOfInvalidUpdates() {
+    var total = 0;
+
+    for (var update : this.getUpdates()) {
+      if (!this.isValidUpdate(update)) {
+        var fixedUpdate = this.fixUpdate(update);
+        var middleIndex = fixedUpdate.size() / 2;
+        total += fixedUpdate.get(middleIndex);
       }
     }
 
