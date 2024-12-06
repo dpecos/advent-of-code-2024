@@ -1,6 +1,5 @@
 package tech.dplabs.aoc.day6;
 
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -77,7 +76,7 @@ public record Guard(int x, int y, Direction direction) {
       var x = nextGuard.x();
       var y = nextGuard.y();
 
-      withinMap = map.withinBoundaries(x, y);
+      withinMap = map.isWithinBoundaries(x, y);
       if (withinMap) {
         var directionValueForCell = nextGuard.direction.id();
         var cellValue = map.getCellValue(x, y);

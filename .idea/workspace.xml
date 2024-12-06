@@ -6,19 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/RunUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/RunUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day1/Day1Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day1/Day1Star1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day1/Day1Star2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day1/Day1Star2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day2/Day2Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day2/Day2Star1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day2/Day2Star2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day2/Day2Star2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day3/Day3Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day3/Day3Star1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day3/Day3Star2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day3/Day3Star2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4/Day4Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4/Day4Star1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4/Day4Star2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4/Day4Star2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day5/Day5Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day5/Day5Star1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day5/Day5Star2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day5/Day5Star2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Day6Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Day6Star1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Day6Star2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Day6Star2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
