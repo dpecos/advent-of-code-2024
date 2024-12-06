@@ -5,12 +5,13 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class AdventureMap {
-    private int[][] cells;
-    private Guard guard;
+    public static final int CELL_EMPTY = 0;
+    public static final int CELL_WALL = -1;
 
-    AdventureMap(int[][] cells, Guard guard) {
+    private final int[][] cells;
+
+    AdventureMap(int[][] cells) {
         this.cells = cells;
-        this.guard = guard;
     }
 
     public static AdventureMap loadFromFile(String path) {
@@ -57,7 +58,7 @@ public class AdventureMap {
             throw new RuntimeException(e);
         }
 
-        return new AdventureMap(cells, guard);
+        return new AdventureMap(cells);
     }
 
     private void printMap() {
@@ -80,45 +81,16 @@ public class AdventureMap {
         System.out.println();
     }
 
-    public boolean moveGuard() {
-        var withinMap = true;
+    public boolean withinBoundaries(int x, int y) {
+        return x >= 0 && x < this.cells[0].length && y >= 0 && y < this.cells.length;
+    }
 
-        while (withinMap) {
-            var x = this.guard.x();
-            var y = this.guard.y();
-            var direction = this.guard.direction();
+    public void markVisited(int x, int y, int value) {
+        this.cells[y][x] = value;
+    }
 
-            var vector = direction.vector();
-            var nextX = x + vector[1];
-            var nextY = y + vector[0];
-
-            if (nextX < 0 || nextX >= this.cells[0].length || nextY < 0 || nextY >= this.cells.length) {
-                withinMap = false;
-            } else {
-                if (direction.id() == this.cells[nextY][nextX]) {
-                    return true;
-                }
-                switch (this.cells[nextY][nextX]) {
-                    case 0:
-                        this.cells[nextY][nextX] = direction.id();
-                        break;
-                    case -1:
-                        direction = switch (direction) {
-                            case Direction.UP -> Direction.RIGHT;
-                            case Direction.RIGHT -> Direction.DOWN;
-                            case Direction.DOWN -> Direction.LEFT;
-                            case Direction.LEFT -> Direction.UP;
-                        };
-                        nextX = x;
-                        nextY = y;
-                        break;
-                }
-                this.guard = new Guard(nextX, nextY, direction);
-            }
-//            this.printMap();
-        }
-
-        return false;
+    public int getCellValue(int x, int y) {
+        return this.cells[y][x];
     }
 
     public int countVisitedCells() {
@@ -141,35 +113,27 @@ public class AdventureMap {
         return newCells;
     }
 
-    public int countLoops() {
+    public int countLoops(Guard guard) {
         var count = 0;
 
         var originalCells = this.cloneCells(this.cells);
-        var originalGuard = this.guard;
 
         for (int i = 0; i < this.cells.length; i++) {
             for (int j = 0; j < this.cells[i].length; j++) {
-                // restore original cells
-                this.cells = this.cloneCells(originalCells);
-                this.guard = originalGuard;
-
-                if (this.cells[i][j] != 0) {
+                if (this.cells[i][j] != CELL_EMPTY) {
                     continue;
                 }
-                this.cells[i][j] = -1;
 
-//                this.printMap();
+                var cells = this.cloneCells(originalCells);
+                cells[i][j] = -1;
 
-                if (this.moveGuard()) {
-                    count += 1;
-                }
+                var map = new AdventureMap(cells);
+
+                if (guard.patrol(map)) count += 1;
             }
         }
 
         return count;
     }
 
-    public Guard getGuard() {
-        return this.guard;
-    }
 }

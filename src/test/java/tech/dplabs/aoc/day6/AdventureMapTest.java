@@ -8,31 +8,39 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 public class AdventureMapTest {
 
   @Test
-  void testLoadFromFile() {
+  void testLoadMapFromFile() {
     var map = AdventureMap.loadFromFile("src/test/resources/day6_input.txt");
-
-    assertEquals(6, map.getGuard().y());
-    assertEquals(4, map.getGuard().x());
 
     assertEquals(1, map.countVisitedCells());
   }
 
   @Test
+  void testLoadGuardFromFile() {
+    var guard = Guard.loadFromFile("src/test/resources/day6_input.txt");
+
+    assertEquals(6, guard.y());
+    assertEquals(4, guard.x());
+  }
+
+  @Test
   void testMoveGuard() {
     var map = AdventureMap.loadFromFile("src/test/resources/day6_input.txt");
-    map.moveGuard();
+    var guard = Guard.loadFromFile("src/test/resources/day6_input.txt");
+    guard.patrol(map);
     assertEquals(41, map.countVisitedCells());
   }
 
   @Test
   void testInitiallyNotInLoop() {
     var map = AdventureMap.loadFromFile("src/test/resources/day6_input.txt");
-    assertFalse(map.moveGuard());
+    var guard = Guard.loadFromFile("src/test/resources/day6_input.txt");
+    assertFalse(guard.patrol(map));
   }
 
   @Test
   void testCountLoopOptions() {
     var map = AdventureMap.loadFromFile("src/test/resources/day6_input.txt");
-    assertEquals(6, map.countLoops());
+    var guard = Guard.loadFromFile("src/test/resources/day6_input.txt");
+    assertEquals(6, map.countLoops(guard));
   }
 }
