@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/RunUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/RunUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/RunUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day1/Day1Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day1/Day1Star1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day1/Day1Star2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day1/Day1Star2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day2/Day2Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day2/Day2Star1.java" afterDir="false" />
@@ -55,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.All.executor": "Run",
     "Application.Day1Star1.executor": "Run",
     "Application.Day1Star2.executor": "Run",
     "Application.Day2Star1.executor": "Run",
@@ -152,17 +153,33 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Day6Star2">
-    <configuration name="Day4Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="All" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day4Star2" />
+      <option name="MAIN_CLASS_NAME" value="All" />
       <module name="aoc" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day6Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Day1Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day6Star1" />
+      <option name="MAIN_CLASS_NAME" value="Day1Star1" />
+      <module name="aoc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day3Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day3Star1" />
+      <module name="aoc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day5Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day5Star1" />
       <module name="aoc" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,51 +193,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdventureMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day6" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day6.AdventureMapTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdventureMapTest.testCountLoopOptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day6" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day6.AdventureMapTest" />
-      <option name="METHOD_NAME" value="testCountLoopOptions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Day4Star2" />
-      <item itemvalue="Application.Day6Star1" />
+      <item itemvalue="Application.All" />
+      <item itemvalue="Application.Day1Star1" />
+      <item itemvalue="Application.Day3Star1" />
       <item itemvalue="Application.Day6Star2" />
-      <item itemvalue="JUnit.AdventureMapTest" />
-      <item itemvalue="JUnit.AdventureMapTest.testCountLoopOptions" />
+      <item itemvalue="Application.Day5Star1" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Day6Star2" />
-        <item itemvalue="Application.Day6Star1" />
-        <item itemvalue="Application.Day4Star2" />
-        <item itemvalue="JUnit.AdventureMapTest" />
-        <item itemvalue="JUnit.AdventureMapTest.testCountLoopOptions" />
+        <item itemvalue="Application.Day1Star1" />
+        <item itemvalue="Application.Day3Star1" />
+        <item itemvalue="Application.All" />
+        <item itemvalue="Application.Day5Star1" />
       </list>
     </recent_temporary>
   </component>
