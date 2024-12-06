@@ -11,4 +11,13 @@ public enum Direction {
       case RIGHT -> new int[]{0, 1};
     };
   }
+
+  public int id() {
+    return switch (this) {
+      case UP -> 1;
+      case RIGHT -> 2;
+      case DOWN -> 3;
+      case LEFT -> 4;
+    };
+  }
 }

@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/AdventureMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Day6Star1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Guard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day6_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day6/AdventureMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day6_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/day6.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/AdventureMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/AdventureMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day6/AdventureMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day6/AdventureMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +57,11 @@
     "Application.Day4Star2.executor": "Run",
     "Application.Day5Star1.executor": "Run",
     "Application.Day5Star2.executor": "Run",
+    "Application.Day6Star1.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AdventureMapTest.executor": "Run",
+    "JUnit.AdventureMapTest.testCountLoopOptions.executor": "Run",
+    "JUnit.AdventureMapTest.testInitiallyNotInLoop.executor": "Run",
     "JUnit.AdventureMapTest.testLoadFromFile.executor": "Run",
     "JUnit.AdventureMapTest.testMoveGuard.executor": "Run",
     "JUnit.All in aoc (1).executor": "Run",
@@ -140,10 +140,10 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day6Star1">
-    <configuration name="Day6Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Day6Star2">
+    <configuration name="Day6Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day6Star1" />
+      <option name="MAIN_CLASS_NAME" value="Day6Star2" />
       <module name="aoc" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdventureMapTest.testLoadFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AdventureMapTest.testCountLoopOptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
@@ -174,7 +174,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day6" />
       <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day6.AdventureMapTest" />
-      <option name="METHOD_NAME" value="testLoadFromFile" />
+      <option name="METHOD_NAME" value="testCountLoopOptions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdventureMapTest.testInitiallyNotInLoop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day6" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day6.AdventureMapTest" />
+      <option name="METHOD_NAME" value="testInitiallyNotInLoop" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,35 +212,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day5" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day5.PrintQueueTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Day6Star1" />
+      <item itemvalue="Application.Day6Star2" />
       <item itemvalue="JUnit.AdventureMapTest" />
-      <item itemvalue="JUnit.AdventureMapTest.testLoadFromFile" />
+      <item itemvalue="JUnit.AdventureMapTest.testCountLoopOptions" />
+      <item itemvalue="JUnit.AdventureMapTest.testInitiallyNotInLoop" />
       <item itemvalue="JUnit.AdventureMapTest.testMoveGuard" />
-      <item itemvalue="JUnit.PrintQueueTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Day6Star1" />
-        <item itemvalue="JUnit.AdventureMapTest.testMoveGuard" />
+        <item itemvalue="Application.Day6Star2" />
+        <item itemvalue="JUnit.AdventureMapTest.testCountLoopOptions" />
+        <item itemvalue="JUnit.AdventureMapTest.testInitiallyNotInLoop" />
         <item itemvalue="JUnit.AdventureMapTest" />
-        <item itemvalue="JUnit.AdventureMapTest.testLoadFromFile" />
-        <item itemvalue="JUnit.PrintQueueTest" />
+        <item itemvalue="JUnit.AdventureMapTest.testMoveGuard" />
       </list>
     </recent_temporary>
   </component>

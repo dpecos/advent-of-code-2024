@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class AdventureMap {
-    private final int[][] cells;
+    private int[][] cells;
     private Guard guard;
 
     AdventureMap(int[][] cells, Guard guard) {
@@ -70,7 +70,7 @@ public class AdventureMap {
                     case -1:
                         System.out.print("# ");
                         break;
-                    case 1:
+                    default:
                         System.out.print("* ");
                         break;
                 }
@@ -80,7 +80,7 @@ public class AdventureMap {
         System.out.println();
     }
 
-    public void moveGuard() {
+    public boolean moveGuard() {
         var withinMap = true;
 
         while (withinMap) {
@@ -95,9 +95,12 @@ public class AdventureMap {
             if (nextX < 0 || nextX >= this.cells[0].length || nextY < 0 || nextY >= this.cells.length) {
                 withinMap = false;
             } else {
+                if (direction.id() == this.cells[nextY][nextX]) {
+                    return true;
+                }
                 switch (this.cells[nextY][nextX]) {
                     case 0:
-                        this.cells[nextY][nextX] = 1;
+                        this.cells[nextY][nextX] = direction.id();
                         break;
                     case -1:
                         direction = switch (direction) {
@@ -112,19 +115,57 @@ public class AdventureMap {
                 }
                 this.guard = new Guard(nextX, nextY, direction);
             }
-            //this.printMap();
+//            this.printMap();
         }
+
+        return false;
     }
 
     public int countVisitedCells() {
         var count = 0;
         for (int i = 0; i < this.cells.length; i++) {
             for (int j = 0; j < this.cells[i].length; j++) {
-                if (this.cells[i][j] == 1) {
+                if (this.cells[i][j] > 0) {
                     count += 1;
                 }
             }
         }
+        return count;
+    }
+
+    private int[][] cloneCells(int[][] cells) {
+        var newCells = cells.clone();
+        for (int k = 0; k < newCells.length; k++) {
+            newCells[k] = newCells[k].clone();
+        }
+        return newCells;
+    }
+
+    public int countLoops() {
+        var count = 0;
+
+        var originalCells = this.cloneCells(this.cells);
+        var originalGuard = this.guard;
+
+        for (int i = 0; i < this.cells.length; i++) {
+            for (int j = 0; j < this.cells[i].length; j++) {
+                // restore original cells
+                this.cells = this.cloneCells(originalCells);
+                this.guard = originalGuard;
+
+                if (this.cells[i][j] != 0) {
+                    continue;
+                }
+                this.cells[i][j] = -1;
+
+//                this.printMap();
+
+                if (this.moveGuard()) {
+                    count += 1;
+                }
+            }
+        }
+
         return count;
     }
 
