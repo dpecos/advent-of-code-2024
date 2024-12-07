@@ -36,9 +36,9 @@ public class Calibration {
     return equations;
   }
 
-  public long calibrationResult() {
+  public long calibrationResult(boolean joiningOperands) {
     return Arrays.stream(this.equations)
-      .filter(Equation::isSolvable)
+      .filter(eq -> eq.isSolvable(joiningOperands))
       .mapToLong(Equation::result)
       .sum();
   }

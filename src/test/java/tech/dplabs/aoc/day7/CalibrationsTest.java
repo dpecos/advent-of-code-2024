@@ -22,12 +22,27 @@ public class CalibrationsTest {
   @Test
   void testEquationSolver() {
     var equation = new Equation(190, new long[]{10, 19});
-    assertTrue(equation.isSolvable());
+    assertTrue(equation.isSolvable(false));
   }
 
   @Test
   void testCalibration() {
     var calibration = Calibration.loadFromFile("src/test/resources/day7_input.txt");
-    assertEquals(3749, calibration.calibrationResult());
+    assertEquals(3749, calibration.calibrationResult(false));
+  }
+
+  @Test
+  void testEquationSolverJoining() {
+    var equation = new Equation(156, new long[]{15, 6});
+    assertTrue(equation.isSolvable(true));
+
+    var equation2 = new Equation(7290, new long[]{6, 8, 6, 15});
+    assertTrue(equation.isSolvable(true));
+  }
+
+  @Test
+  void testCalibrationJoining() {
+    var calibration = Calibration.loadFromFile("src/test/resources/day7_input.txt");
+    assertEquals(11387, calibration.calibrationResult(true));
   }
 }
