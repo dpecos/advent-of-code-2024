@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Calibration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Day7Star1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Equation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day7_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day7/CalibrationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day7_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +75,9 @@
     "JUnit.CalculatorTest.testCalculateConditionals.executor": "Run",
     "JUnit.CalculatorTest.testCalculateConditionalsAllOff.executor": "Run",
     "JUnit.CalculatorTest.testCalculateConditionalsPartialOff.executor": "Run",
+    "JUnit.CalibrationsTest.executor": "Run",
+    "JUnit.CalibrationsTest.testEquationSolver.executor": "Run",
+    "JUnit.CalibrationsTest.testLoadFromFile.executor": "Run",
     "JUnit.ListUtilsTest.testReadingPairOfLists.executor": "Run",
     "JUnit.PrintQueueTest.executor": "Run",
     "JUnit.PrintQueueTest.testFixRule.executor": "Run",
@@ -113,6 +122,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="tech.dplabs.aoc.day7" />
       <recent name="tech.dplabs.aoc.day1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -139,39 +149,7 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day6Star2">
-    <configuration name="All" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="All" />
-      <module name="aoc" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day1Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day1Star1" />
-      <module name="aoc" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day3Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day3Star1" />
-      <module name="aoc" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day5Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day5Star1" />
-      <module name="aoc" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Day7Star1">
     <configuration name="Day6Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <option name="MAIN_CLASS_NAME" value="Day6Star2" />
@@ -180,20 +158,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day7Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day7Star1" />
+      <module name="aoc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalibrationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day7" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day7.CalibrationsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalibrationsTest.testEquationSolver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day7" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day7.CalibrationsTest" />
+      <option name="METHOD_NAME" value="testEquationSolver" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalibrationsTest.testLoadFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day7" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day7.CalibrationsTest" />
+      <option name="METHOD_NAME" value="testLoadFromFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.All" />
-      <item itemvalue="Application.Day1Star1" />
-      <item itemvalue="Application.Day3Star1" />
+      <item itemvalue="Application.Day7Star1" />
       <item itemvalue="Application.Day6Star2" />
-      <item itemvalue="Application.Day5Star1" />
+      <item itemvalue="JUnit.CalibrationsTest" />
+      <item itemvalue="JUnit.CalibrationsTest.testEquationSolver" />
+      <item itemvalue="JUnit.CalibrationsTest.testLoadFromFile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day7Star1" />
+        <item itemvalue="JUnit.CalibrationsTest" />
+        <item itemvalue="JUnit.CalibrationsTest.testEquationSolver" />
+        <item itemvalue="JUnit.CalibrationsTest.testLoadFromFile" />
         <item itemvalue="Application.Day6Star2" />
-        <item itemvalue="Application.Day1Star1" />
-        <item itemvalue="Application.Day3Star1" />
-        <item itemvalue="Application.All" />
-        <item itemvalue="Application.Day5Star1" />
       </list>
     </recent_temporary>
   </component>
