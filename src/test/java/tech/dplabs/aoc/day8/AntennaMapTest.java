@@ -16,7 +16,14 @@ public class AntennaMapTest {
   @Test
   void testCountAntiNodes() {
     var map = AntennaMap.loadFromFile("src/test/resources/day8_input.txt");
-    var antinodes = map.markAntiNodes();
+    var antinodes = map.markAntiNodes(false);
     assertEquals(14, countValues(antinodes, AntennaMap.ANTI_NODE));
+  }
+
+  @Test
+  void testCountMultipleAntiNodes() {
+    var map = AntennaMap.loadFromFile("src/test/resources/day8_input.txt");
+    var antinodes = map.markAntiNodes(true);
+    assertEquals(34, countValues(antinodes, AntennaMap.ANTI_NODE));
   }
 }

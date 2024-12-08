@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/MatrixUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/AntennaMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/Day8Star1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day8_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day8/AntennaMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day8_input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4/WordSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/day8.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/AntennaMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/AntennaMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/Day8Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/Day8Star1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day8/AntennaMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day8/AntennaMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +61,7 @@
     "Application.Day6Star2.executor": "Run",
     "Application.Day7Star1.executor": "Run",
     "Application.Day7Star2.executor": "Run",
+    "Application.Day8Star1.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AdventureMapTest.executor": "Run",
     "JUnit.AdventureMapTest.testCountLoopOptions.executor": "Run",
@@ -160,26 +156,18 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day8Star1">
-    <configuration name="Day7Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day7Star1" />
-      <module name="aoc" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day7Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day7Star2" />
-      <module name="aoc" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Day8Star2">
     <configuration name="Day8Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <option name="MAIN_CLASS_NAME" value="Day8Star1" />
+      <module name="aoc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day8Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day8Star2" />
       <module name="aoc" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,6 +184,22 @@
       <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day8" />
       <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day8.AntennaMapTest" />
       <option name="METHOD_NAME" value="testCountAntiNodes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AntennaMapTest.testCountMultipleAntiNodes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day8" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day8.AntennaMapTest" />
+      <option name="METHOD_NAME" value="testCountMultipleAntiNodes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -218,19 +222,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Day7Star1" />
-      <item itemvalue="Application.Day7Star2" />
       <item itemvalue="Application.Day8Star1" />
+      <item itemvalue="Application.Day8Star2" />
       <item itemvalue="JUnit.AntennaMapTest.testCountAntiNodes" />
+      <item itemvalue="JUnit.AntennaMapTest.testCountMultipleAntiNodes" />
       <item itemvalue="JUnit.AntennaMapTest.testLoadFromFile" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Day8Star1" />
+        <item itemvalue="Application.Day8Star2" />
+        <item itemvalue="JUnit.AntennaMapTest.testCountMultipleAntiNodes" />
         <item itemvalue="JUnit.AntennaMapTest.testCountAntiNodes" />
+        <item itemvalue="Application.Day8Star1" />
         <item itemvalue="JUnit.AntennaMapTest.testLoadFromFile" />
-        <item itemvalue="Application.Day7Star2" />
-        <item itemvalue="Application.Day7Star1" />
       </list>
     </recent_temporary>
   </component>

@@ -20,7 +20,11 @@ public class MatrixUtils {
   public static <T> void printMatrix(T[][] matrix) {
     for (var row : matrix) {
       for (var col : row) {
-        System.out.print(" " + col + " ");
+        if (col == null) {
+          System.out.print(" . ");
+        } else {
+          System.out.print(" " + col + " ");
+        }
       }
       System.out.println();
     }

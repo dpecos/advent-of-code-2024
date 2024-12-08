@@ -48,7 +48,7 @@ public class AntennaMap {
     return new AntennaMap(length, lines, map);
   }
 
-  public String[][] markAntiNodes() {
+  public String[][] markAntiNodes(boolean multipleAntinodes) {
     var antinodesMap = new String[this.height][this.width];
 
     for (var row = 0; row < this.height; row++) {
@@ -67,10 +67,22 @@ public class AntennaMap {
 
             var frequency = this.map[row][col];
 
-            for (var i = 1; i < this.height; i++) {
-              for (var j = 1; j < this.width; j++) {
-                if (checkPosition(this.map, row + x * i, col + y * j, frequency)) {
-                  setPosition(antinodesMap, row + x * i * 2, col + y * j * 2, ANTI_NODE);
+            if (multipleAntinodes) {
+              for (var i = 0; i < this.height; i++) {
+                for (var j = 0; j < this.width; j++) {
+                  if (checkPosition(this.map, row + x * i, col + y * j, frequency)) {
+                    for (var t = 0; t <= this.height; t++) {
+                      setPosition(antinodesMap, row + x * i * t, col + y * j * t, ANTI_NODE);
+                    }
+                  }
+                }
+              }
+            } else {
+              for (var i = 1; i < this.height; i++) {
+                for (var j = 1; j < this.width; j++) {
+                  if (checkPosition(this.map, row + x * i, col + y * j, frequency)) {
+                    setPosition(antinodesMap, row + x * i * 2, col + y * j * 2, ANTI_NODE);
+                  }
                 }
               }
             }
