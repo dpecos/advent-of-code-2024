@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/day8.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/AntennaMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/AntennaMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/Day8Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/Day8Star1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day8/AntennaMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day8/AntennaMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/MatrixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/MatrixUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/AdventureMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/AdventureMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,7 @@
     "Application.Day7Star1.executor": "Run",
     "Application.Day7Star2.executor": "Run",
     "Application.Day8Star1.executor": "Run",
+    "Application.Day8Star2.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AdventureMapTest.executor": "Run",
     "JUnit.AdventureMapTest.testCountLoopOptions.executor": "Run",
@@ -71,6 +71,7 @@
     "JUnit.All in aoc (1).executor": "Run",
     "JUnit.All in aoc.executor": "Run",
     "JUnit.AntennaMapTest.testCountAntiNodes.executor": "Run",
+    "JUnit.AntennaMapTest.testCountMultipleAntiNodes.executor": "Run",
     "JUnit.AntennaMapTest.testLoadFromFile.executor": "Run",
     "JUnit.CalculatorTest.executor": "Run",
     "JUnit.CalculatorTest.testCalculate.executor": "Run",
@@ -118,7 +119,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/tech/dplabs/aoc",
-    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/docs",
+    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/main/java/tech/dplabs/aoc/day8",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -132,11 +133,11 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day5" />
-      <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
