@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Day7Star2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/MatrixUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/AntennaMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8/Day8Star1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day8_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day8/AntennaMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day8_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Calibration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Calibration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Day7Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Day7Star1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Equation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7/Equation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day7/CalibrationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day7/CalibrationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4/WordSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +64,7 @@
     "Application.Day5Star2.executor": "Run",
     "Application.Day6Star1.executor": "Run",
     "Application.Day6Star2.executor": "Run",
+    "Application.Day7Star1.executor": "Run",
     "Application.Day7Star2.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AdventureMapTest.executor": "Run",
@@ -70,6 +74,8 @@
     "JUnit.AdventureMapTest.testMoveGuard.executor": "Run",
     "JUnit.All in aoc (1).executor": "Run",
     "JUnit.All in aoc.executor": "Run",
+    "JUnit.AntennaMapTest.testCountAntiNodes.executor": "Run",
+    "JUnit.AntennaMapTest.testLoadFromFile.executor": "Run",
     "JUnit.CalculatorTest.executor": "Run",
     "JUnit.CalculatorTest.testCalculate.executor": "Run",
     "JUnit.CalculatorTest.testCalculateConditionals.executor": "Run",
@@ -116,7 +122,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/tech/dplabs/aoc",
-    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/main/java/tech/dplabs/aoc/day7",
+    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/docs",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -130,11 +136,11 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day5" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day4" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
@@ -154,7 +160,7 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day7Star2">
+  <component name="RunManager" selected="Application.Day8Star1">
     <configuration name="Day7Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <option name="MAIN_CLASS_NAME" value="Day7Star1" />
@@ -171,48 +177,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalibrationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day8Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day8Star1" />
       <module name="aoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day7" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day7.CalibrationsTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalibrationsTest.testCalibrationJoining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AntennaMapTest.testCountAntiNodes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day7.*" />
+          <option name="PATTERN" value="tech.dplabs.aoc.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day7" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day7.CalibrationsTest" />
-      <option name="METHOD_NAME" value="testCalibrationJoining" />
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day8" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day8.AntennaMapTest" />
+      <option name="METHOD_NAME" value="testCountAntiNodes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalibrationsTest.testEquationSolverJoining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AntennaMapTest.testLoadFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day7.*" />
+          <option name="PATTERN" value="tech.dplabs.aoc.day8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day7" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day7.CalibrationsTest" />
-      <option name="METHOD_NAME" value="testEquationSolverJoining" />
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day8" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day8.AntennaMapTest" />
+      <option name="METHOD_NAME" value="testLoadFromFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -221,17 +220,17 @@
     <list>
       <item itemvalue="Application.Day7Star1" />
       <item itemvalue="Application.Day7Star2" />
-      <item itemvalue="JUnit.CalibrationsTest" />
-      <item itemvalue="JUnit.CalibrationsTest.testCalibrationJoining" />
-      <item itemvalue="JUnit.CalibrationsTest.testEquationSolverJoining" />
+      <item itemvalue="Application.Day8Star1" />
+      <item itemvalue="JUnit.AntennaMapTest.testCountAntiNodes" />
+      <item itemvalue="JUnit.AntennaMapTest.testLoadFromFile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Day8Star1" />
+        <item itemvalue="JUnit.AntennaMapTest.testCountAntiNodes" />
+        <item itemvalue="JUnit.AntennaMapTest.testLoadFromFile" />
         <item itemvalue="Application.Day7Star2" />
         <item itemvalue="Application.Day7Star1" />
-        <item itemvalue="JUnit.CalibrationsTest" />
-        <item itemvalue="JUnit.CalibrationsTest.testCalibrationJoining" />
-        <item itemvalue="JUnit.CalibrationsTest.testEquationSolverJoining" />
       </list>
     </recent_temporary>
   </component>

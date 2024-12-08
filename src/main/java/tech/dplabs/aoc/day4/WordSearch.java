@@ -1,30 +1,21 @@
 package tech.dplabs.aoc.day4;
 
+import tech.dplabs.aoc.common.FileUtils;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+import static tech.dplabs.aoc.common.MatrixUtils.checkPosition;
+
 public class WordSearch {
   public static String[][] loadFromFile(String path) {
     // let's count the length and amount of lines in the file
-    int lines = 0;
-    int length = 0;
-    try (var reader = new BufferedReader(new FileReader(path))) {
-      String line;
-      while ((line = reader.readLine()) != null) {
-        if (length == 0) {
-          length = line.length();
-        } else if (length != line.length()) {
-          throw new IllegalArgumentException("All lines must have the same length");
-        }
-        lines++;
-      }
-    } catch (FileNotFoundException e) {
-      throw new RuntimeException(e);
-    } catch (IOException e) {
-      throw new RuntimeException(e);
-    }
+    var count = FileUtils.countLinesAndLength(path);
+
+    int lines = count[0];
+    int length = count[1];
 
     var wordle = new String[lines][];
 
@@ -117,12 +108,5 @@ public class WordSearch {
 
   static boolean checkCrossMAS(String[][] wordSearch, int row, int col, int x, int y) {
     return checkMAS(wordSearch, row, col, x, y) && (checkMAS(wordSearch, row + x * 2, col, -x, y) || checkMAS(wordSearch, row, col + y * 2, x, -y));
-  }
-
-  private static boolean checkPosition(String[][] wordSearch, int row, int col, String letter) {
-    if (row < 0 || row >= wordSearch.length || col < 0 || col >= wordSearch[row].length) {
-      return false;
-    }
-    return wordSearch[row][col].equals(letter);
   }
 }
