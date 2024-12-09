@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day9/DiskMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day9/Day9Star1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day9_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day9/DiskMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/day9_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/day9.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day9/DiskMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day9/DiskMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day9/Day9Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day9/Day9Star1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day9/DiskMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day9/DiskMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,9 @@
     "JUnit.CalibrationsTest.testLoadFromFile.executor": "Run",
     "JUnit.DiskMapTest.executor": "Run",
     "JUnit.DiskMapTest.testChecksum.executor": "Run",
+    "JUnit.DiskMapTest.testChecksumContiguousFiles.executor": "Run",
     "JUnit.DiskMapTest.testDefragment.executor": "Run",
+    "JUnit.DiskMapTest.testDefragmentContiguousFiles.executor": "Run",
     "JUnit.DiskMapTest.testLoadFromFile.executor": "Run",
     "JUnit.DiskMapTest.testParseDiskDescriptor.executor": "Run",
     "JUnit.ListUtilsTest.testReadingPairOfLists.executor": "Run",
@@ -166,10 +167,18 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day9Star1">
+  <component name="RunManager" selected="JUnit.DiskMapTest">
     <configuration name="Day9Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
       <option name="MAIN_CLASS_NAME" value="Day9Star1" />
+      <module name="aoc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day9Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day9Star2" />
       <module name="aoc" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,7 +199,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiskMapTest.testChecksum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiskMapTest.testChecksumContiguousFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
@@ -200,13 +209,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
       <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
-      <option name="METHOD_NAME" value="testChecksum" />
+      <option name="METHOD_NAME" value="testChecksumContiguousFiles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiskMapTest.testDefragment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiskMapTest.testDefragmentContiguousFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
@@ -216,23 +225,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
       <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
-      <option name="METHOD_NAME" value="testDefragment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiskMapTest.testParseDiskDescriptor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
-      <option name="METHOD_NAME" value="testParseDiskDescriptor" />
+      <option name="METHOD_NAME" value="testDefragmentContiguousFiles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -240,18 +233,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Day9Star1" />
+      <item itemvalue="Application.Day9Star2" />
       <item itemvalue="JUnit.DiskMapTest" />
-      <item itemvalue="JUnit.DiskMapTest.testChecksum" />
-      <item itemvalue="JUnit.DiskMapTest.testDefragment" />
-      <item itemvalue="JUnit.DiskMapTest.testParseDiskDescriptor" />
+      <item itemvalue="JUnit.DiskMapTest.testChecksumContiguousFiles" />
+      <item itemvalue="JUnit.DiskMapTest.testDefragmentContiguousFiles" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Day9Star1" />
-        <item itemvalue="JUnit.DiskMapTest.testChecksum" />
         <item itemvalue="JUnit.DiskMapTest" />
-        <item itemvalue="JUnit.DiskMapTest.testDefragment" />
-        <item itemvalue="JUnit.DiskMapTest.testParseDiskDescriptor" />
+        <item itemvalue="Application.Day9Star2" />
+        <item itemvalue="JUnit.DiskMapTest.testDefragmentContiguousFiles" />
+        <item itemvalue="JUnit.DiskMapTest.testChecksumContiguousFiles" />
+        <item itemvalue="Application.Day9Star1" />
       </list>
     </recent_temporary>
   </component>
@@ -329,11 +322,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/Day6Star1.java</url>
           <line>4</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day9/DiskMapTest.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.RuntimeException" package="java.lang" />
