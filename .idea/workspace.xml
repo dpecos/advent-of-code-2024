@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/day9/DiskMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day9/Day9Star1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day9_input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day9/DiskMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/day9_input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/MatrixUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/MatrixUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/AdventureMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6/AdventureMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +65,7 @@
     "Application.Day7Star2.executor": "Run",
     "Application.Day8Star1.executor": "Run",
     "Application.Day8Star2.executor": "Run",
+    "Application.Day9Star1.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AdventureMapTest.executor": "Run",
     "JUnit.AdventureMapTest.testCountLoopOptions.executor": "Run",
@@ -85,6 +89,11 @@
     "JUnit.CalibrationsTest.testEquationSolverJoining.executor": "Run",
     "JUnit.CalibrationsTest.testJoinOperands.executor": "Run",
     "JUnit.CalibrationsTest.testLoadFromFile.executor": "Run",
+    "JUnit.DiskMapTest.executor": "Run",
+    "JUnit.DiskMapTest.testChecksum.executor": "Run",
+    "JUnit.DiskMapTest.testDefragment.executor": "Run",
+    "JUnit.DiskMapTest.testLoadFromFile.executor": "Run",
+    "JUnit.DiskMapTest.testParseDiskDescriptor.executor": "Run",
     "JUnit.ListUtilsTest.testReadingPairOfLists.executor": "Run",
     "JUnit.PrintQueueTest.executor": "Run",
     "JUnit.PrintQueueTest.testFixRule.executor": "Run",
@@ -119,7 +128,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/tech/dplabs/aoc",
-    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/main/java/tech/dplabs/aoc/day8",
+    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/main/java/tech/dplabs/aoc/day9",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -133,11 +142,11 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day9" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6" />
-      <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
@@ -157,85 +166,92 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Day8Star2">
-    <configuration name="Day8Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Day9Star1">
+    <configuration name="Day9Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day8Star1" />
+      <option name="MAIN_CLASS_NAME" value="Day9Star1" />
       <module name="aoc" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day8Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day8Star2" />
-      <module name="aoc" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AntennaMapTest.testCountAntiNodes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiskMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day8.*" />
+          <option name="PATTERN" value="tech.dplabs.aoc.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day8" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day8.AntennaMapTest" />
-      <option name="METHOD_NAME" value="testCountAntiNodes" />
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiskMapTest.testChecksum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
+      <option name="METHOD_NAME" value="testChecksum" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AntennaMapTest.testCountMultipleAntiNodes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiskMapTest.testDefragment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day8.*" />
+          <option name="PATTERN" value="tech.dplabs.aoc.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day8" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day8.AntennaMapTest" />
-      <option name="METHOD_NAME" value="testCountMultipleAntiNodes" />
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
+      <option name="METHOD_NAME" value="testDefragment" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AntennaMapTest.testLoadFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiskMapTest.testParseDiskDescriptor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day8.*" />
+          <option name="PATTERN" value="tech.dplabs.aoc.day9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day8" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day8.AntennaMapTest" />
-      <option name="METHOD_NAME" value="testLoadFromFile" />
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
+      <option name="METHOD_NAME" value="testParseDiskDescriptor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Day8Star1" />
-      <item itemvalue="Application.Day8Star2" />
-      <item itemvalue="JUnit.AntennaMapTest.testCountAntiNodes" />
-      <item itemvalue="JUnit.AntennaMapTest.testCountMultipleAntiNodes" />
-      <item itemvalue="JUnit.AntennaMapTest.testLoadFromFile" />
+      <item itemvalue="Application.Day9Star1" />
+      <item itemvalue="JUnit.DiskMapTest" />
+      <item itemvalue="JUnit.DiskMapTest.testChecksum" />
+      <item itemvalue="JUnit.DiskMapTest.testDefragment" />
+      <item itemvalue="JUnit.DiskMapTest.testParseDiskDescriptor" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Day8Star2" />
-        <item itemvalue="JUnit.AntennaMapTest.testCountMultipleAntiNodes" />
-        <item itemvalue="JUnit.AntennaMapTest.testCountAntiNodes" />
-        <item itemvalue="Application.Day8Star1" />
-        <item itemvalue="JUnit.AntennaMapTest.testLoadFromFile" />
+        <item itemvalue="Application.Day9Star1" />
+        <item itemvalue="JUnit.DiskMapTest.testChecksum" />
+        <item itemvalue="JUnit.DiskMapTest" />
+        <item itemvalue="JUnit.DiskMapTest.testDefragment" />
+        <item itemvalue="JUnit.DiskMapTest.testParseDiskDescriptor" />
       </list>
     </recent_temporary>
   </component>
@@ -314,6 +330,15 @@
           <line>4</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day9/DiskMapTest.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
