@@ -1,6 +1,5 @@
 package tech.dplabs.aoc.day9;
 
-import day9.DiskMap;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -48,7 +47,6 @@ public class DiskMapTest {
     var diskMap = DiskMap.readFromFile("src/test/resources/day9_input.txt");
     diskMap.parseDiskDescriptor();
     diskMap.defragment(true);
-    System.out.println(diskMap);
     assertEquals(2858, diskMap.checksum());
   }
 }

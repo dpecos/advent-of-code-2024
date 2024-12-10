@@ -1,5 +1,5 @@
-import day9.DiskMap;
 import tech.dplabs.aoc.common.RunUtils;
+import tech.dplabs.aoc.day9.DiskMap;
 
 void main() {
   RunUtils.measureRuntime("Day 9 - Star 1", () -> {

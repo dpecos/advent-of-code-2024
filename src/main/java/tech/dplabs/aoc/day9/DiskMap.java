@@ -1,4 +1,4 @@
-package day9;
+package tech.dplabs.aoc.day9;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
