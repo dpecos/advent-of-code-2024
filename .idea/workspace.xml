@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/day9.md" afterDir="false" />
+    <list default="true" id="98cd4fe3-e4fb-4e6b-8d39-0394688bf9f5" name="Changes" comment="Day 11 - Star 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/common/Matrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day9/DiskMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day9/DiskMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day9/Day9Star1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day9/Day9Star1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day9/DiskMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tech/dplabs/aoc/day9/DiskMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day11/Day11Star2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day11/Day11Star2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.All.executor": "Run",
+    "Application.Day11Star1.executor": "Run",
+    "Application.Day11Star2.executor": "Run",
     "Application.Day1Star1.executor": "Run",
     "Application.Day1Star2.executor": "Run",
     "Application.Day2Star1.executor": "Run",
@@ -65,6 +65,7 @@
     "Application.Day8Star1.executor": "Run",
     "Application.Day8Star2.executor": "Run",
     "Application.Day9Star1.executor": "Run",
+    "Application.Day9Star2.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AdventureMapTest.executor": "Run",
     "JUnit.AdventureMapTest.testCountLoopOptions.executor": "Run",
@@ -96,12 +97,18 @@
     "JUnit.DiskMapTest.testLoadFromFile.executor": "Run",
     "JUnit.DiskMapTest.testParseDiskDescriptor.executor": "Run",
     "JUnit.ListUtilsTest.testReadingPairOfLists.executor": "Run",
+    "JUnit.PebbleTest.executor": "Run",
+    "JUnit.PebbleTest.testPebbleBlink.executor": "Run",
     "JUnit.PrintQueueTest.executor": "Run",
     "JUnit.PrintQueueTest.testFixRule.executor": "Run",
     "JUnit.PrintQueueTest.testLoadFromFile.executor": "Run",
     "JUnit.PrintQueueTest.testSumMiddlePagesOfInvalidUpdates.executor": "Run",
     "JUnit.PrintQueueTest.testSumMidelePagesOfValidUpdates.executor": "Run",
     "JUnit.PrintQueueTest.testUpdatesCheck.executor": "Run",
+    "JUnit.StoneTest.executor": "Run",
+    "JUnit.StoneTest.testStoneBlink1.executor": "Run",
+    "JUnit.StoneTest.testStoneBlinkRule2.executor": "Run",
+    "JUnit.StoneTest.testStoneBlinkRule3.executor": "Run",
     "JUnit.WordSearchTest.executor": "Run",
     "JUnit.WordSearchTest.testCheckCrossMAS.executor": "Run",
     "JUnit.WordSearchTest.testCheckCrossMAS1.executor": "Run",
@@ -129,7 +136,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/tech/dplabs/aoc",
-    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/main/java/tech/dplabs/aoc/day9",
+    "last_opened_file_path": "/Users/mac-DPECOS27/projects-dplabs/advent-of-code-2024/src/main/java/tech/dplabs/aoc/day11",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -143,11 +150,11 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day11" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day9" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day8" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day7" />
-      <recent name="$PROJECT_DIR$/src/main/java/tech/dplabs/aoc/day6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
@@ -167,84 +174,76 @@
       <recent name="tech.dplabs.aoc.day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DiskMapTest">
-    <configuration name="Day9Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Day11Star2">
+    <configuration name="Day11Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day9Star1" />
+      <option name="MAIN_CLASS_NAME" value="Day11Star1" />
       <module name="aoc" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day9Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Day11Star2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Day9Star2" />
+      <option name="MAIN_CLASS_NAME" value="Day11Star2" />
       <module name="aoc" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiskMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day2Star1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Day2Star1" />
+      <module name="aoc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PebbleTest.testPebbleBlink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aoc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day9.*" />
+          <option name="PATTERN" value="tech.dplabs.aoc.day11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day11" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day11.PebbleTest" />
+      <option name="METHOD_NAME" value="testPebbleBlink" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aoc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tech.dplabs.aoc.day11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day11" />
+      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day11.StoneTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiskMapTest.testChecksumContiguousFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
-      <option name="METHOD_NAME" value="testChecksumContiguousFiles" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiskMapTest.testDefragmentContiguousFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aoc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tech.dplabs.aoc.day9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tech.dplabs.aoc.day9" />
-      <option name="MAIN_CLASS_NAME" value="tech.dplabs.aoc.day9.DiskMapTest" />
-      <option name="METHOD_NAME" value="testDefragmentContiguousFiles" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Day9Star1" />
-      <item itemvalue="Application.Day9Star2" />
-      <item itemvalue="JUnit.DiskMapTest" />
-      <item itemvalue="JUnit.DiskMapTest.testChecksumContiguousFiles" />
-      <item itemvalue="JUnit.DiskMapTest.testDefragmentContiguousFiles" />
+      <item itemvalue="Application.Day11Star1" />
+      <item itemvalue="Application.Day11Star2" />
+      <item itemvalue="Application.Day2Star1" />
+      <item itemvalue="JUnit.PebbleTest.testPebbleBlink" />
+      <item itemvalue="JUnit.StoneTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DiskMapTest" />
-        <item itemvalue="Application.Day9Star2" />
-        <item itemvalue="JUnit.DiskMapTest.testDefragmentContiguousFiles" />
-        <item itemvalue="JUnit.DiskMapTest.testChecksumContiguousFiles" />
-        <item itemvalue="Application.Day9Star1" />
+        <item itemvalue="Application.Day11Star2" />
+        <item itemvalue="JUnit.StoneTest" />
+        <item itemvalue="Application.Day11Star1" />
+        <item itemvalue="Application.Day2Star1" />
+        <item itemvalue="JUnit.PebbleTest.testPebbleBlink" />
       </list>
     </recent_temporary>
   </component>
@@ -257,6 +256,31 @@
       <option name="presentableId" value="Default" />
       <updated>1733129525419</updated>
     </task>
+    <task id="LOCAL-00001" summary="Package was misplaced">
+      <option name="closed" value="true" />
+      <created>1733813241376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733813241376</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Day 11 - Star 1">
+      <option name="closed" value="true" />
+      <created>1733896668949</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733896668949</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Day 11 - Star 2">
+      <option name="closed" value="true" />
+      <created>1733926019340</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733926019340</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +293,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Package was misplaced" />
+    <MESSAGE value="Day 11 - Star 1" />
+    <MESSAGE value="Day 11 - Star 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 11 - Star 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
